@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    max-width: 1400px;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    width: 100%;
+    
+}
+a:active, a:link, a:visited{
+    text-decoration: none;
+}
+/*-----------PARTE SUPERIOR-----------*/
+.header{
+    width:100%;
+    background-color: black;
+    position: fixed;
+    height: 2em;
+    padding: 1em 2em;
+}
+.fila{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1em 2em;
+}
+.botonesDer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.botonCentro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.botonesIzq{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.icono{
+    background-color: black;
+    border-radius: 5px;
+    margin: .2em .2em;
+    height: 1.0em;
+    padding: .2em .2em;
+}
+#celular{
+    margin: .2em .2em;
+    height: 1.0em;
+    padding: .2em .2em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+#miCarrito{
+    font-family: 'Poppins', sans-serif;
+}
+#miCarrito:active, #miCarrito:link, #miCarrito:visited{
+    color: white;
+    text-decoration: none;
+}
+/*---------------- FILA DE MENU---------------------*/
+.nav{
+    width: 100%;
+}
+a{
+    color: black;
+    font-weight: bold;
+}
+.menu{
+    font-family: 'Poppins',sans-serif;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: rgb(231, 180, 51);
+}
+.nombre{
+    font-family: 'Irish Grover', cursive;
+    font-size: 1.5em;
+    color: rgb(219, 91, 16);
+}
+#subMenuMujer{
+    color: black;
+    visibility: hidden;
+    opacity: 0; 
+    font-family: 'Poppins',sans-serif;
+    font-size: .75em;
+    position: absolute;
+    list-style: none;
+    top: 5em;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 0 0 15px 15px;
+    padding: auto;
+}
+#btnMujerD{
+    position: relative;
+    top: 0.125em;
+}
+#btnMujerC{
+    position: relative; 
+    left: -1.2em;
+    visibility: hidden;
+}
+#subMenuHombre{
+    visibility: hidden;
+    opacity: 0; 
+    font-family: 'Poppins',sans-serif;
+    font-size: .75em;
+    position: absolute;
+    list-style: none;
+    top: 5em;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 0 0 15px 15px;
+    padding: auto;
+}
+#btnHombreD{
+    position: relative;
+    top: 0.125em;
+}
+#btnHombreC{
+    position: relative; 
+    left: -1.2em;
+    visibility: hidden;
+}
+#subMenuColegial{
+    visibility: hidden;
+    opacity: 0; 
+    font-family: 'Poppins',sans-serif;
+    font-size: .75em;
+    position: absolute;
+    list-style: none;
+    top: 5em;
+    background-color: rgba(255,255,255,.4);
+    border-radius: 0 0 15px 15px;
+    padding: auto;
+}
+#btnColegialD{
+    position: relative;
+    top: 0.125em;
+}
+#btnColegialC{
+    position: relative; 
+    left: -1.2em;
+    visibility: hidden;
+}
+/* ---------------------CUERPO DE LA PAGINA -----------------------*/
+.cuerpo{
+    width: 100%;
+    min-height: 64em;
+    text-align: center;
+    background-image: url("img/el-revoltijo.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+.imagenes{
+    margin: auto;
+    width: 50vw; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#talla{
+    width: 29.75em;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+#medir, #medidas{
+    width: 28em;
+    margin: 0 0 0 .2em;
+    position: relative;
+}
+#medir{
+    border-radius: 0 20px 0 0;
+}
+#medidas{
+    border-radius: 0 0 20px 0;
+}
+.footer{
+    background-color: black;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+.datos{
+    color: rgb(125,125,125);
+    font-family: 'Poppins', sans-serif;
+    font-size: .6em;
+}
+.nombre1{
+    font-family: 'Irish Grover', cursive;
+    font-size: 5em;
+    color: rgb(219, 91, 16);
+}
+.copyright{
+    align-items: center;
+    color: aquamarine;
+}
+
+/* ==================================== RESPONSIVE =============================*/
+
+@media only screen and (max-width:1300px){
+    body{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1100px){
+    body{
+        font-size: 9px;
+    }
+    #imagenes{
+        width: 66vw;  
+    }
+}
+@media only screen and (max-width:720px){
+    body{
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width:550px){
+    #imagenes {
+        width:27em;
+    }
+    .icono{
+        width:1.5em;
+    }
+}
