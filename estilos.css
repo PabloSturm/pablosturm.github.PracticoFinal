@@ -16,9 +16,11 @@ a:active, a:link, a:visited{
 .header{
     width:100%;
     background-color: black;
-    position: fixed;
     height: 2em;
-    padding: 1em 2em;
+    padding: 1em 2em;   
+    animation: 2s;
+    animation-delay: initial;
+    animation-name: slideIn;
 }
 .fila{
     width: 100%;
@@ -218,6 +220,14 @@ a{
     color: aquamarine;
 }
 
+@keyframes slideIn{
+    from{
+        margin-top: -100%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
 /* ==================================== RESPONSIVE =============================*/
 
 @media only screen and (max-width:1300px){
